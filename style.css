@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Norse Bold';
+    src: url(fonts/norse-bold-webfont.woff) format('woff'),
+         url('fonts/norse-bold-webfont.woff2') format('woff2')
+}
+html,body {
+    margin: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+  font-family: 'Arial', Times, serif;
+  display: grid;
+  grid-template-columns: 30vw 70vw;
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  height: 100vh;
+
+}
+
+body > div:first-child {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.logo{
+    position: absolute;
+    top: 14vh;
+    left: 0;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.logo img{
+    height: 20vh;
+    width: 8vw;
+    display: block;
+}
+.logo > p{
+    font-family: 'Norse Bold';
+    font-size: 5vw;
+    color: white;
+}
+.credit {
+    margin: 0;
+    color: white;
+    font-size: 1rem;
+}
+
+body > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+    display: block;
+}
+fieldset > div:nth-child(2) {
+    display: flex;
+    gap: 3vw;
+}
+fieldset {
+    border-width: 0px 0 1px 0;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+}
+input {
+    width: 15vw;
+    height: 3vh;
+    cursor: text;
+}
+
+button {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 12rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
